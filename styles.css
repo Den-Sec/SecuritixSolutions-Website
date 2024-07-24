@@ -29,7 +29,7 @@ nav {
 }
 
 .logo {
-    height: 75px;
+    height: 150px;
 }
 
 nav ul {
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #8377dd;
+    color: #37414f;
 }
 
 /* Hero Section Styles */
@@ -86,7 +86,7 @@ nav ul li a:hover {
 .text-content h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
-    color: #8377dd;
+    color: #eeeeee;
     margin-top: 0.5em;
 }
 
@@ -117,7 +117,7 @@ nav ul li a:hover {
 }
 
 .cta-button {
-    background: #8377dd;
+    background: #5d568f;
     color: #fff;
     padding: 0.75em 1.5em;
     border: none;
@@ -133,11 +133,11 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background: #655caa;
+    background: #222831;
 }
 
 #cta-home {
-    background-color: #8377dd; /* Change to the blue color you need */
+    background-color: #5d568f; /* Change to the blue color you need */
     color: #fff;
     padding: 1em 2em; /* Adjust padding to make it more spacious */
     border-radius: 50px; /* Rounder corners */
@@ -436,7 +436,7 @@ nav ul li a:hover {
 }
 
 .quiz-form button {
-    background: #8377dd;
+    background: #37414f;
     color: #fff;
     padding: 0.75em 1.5em;
     border: none;
@@ -448,7 +448,7 @@ nav ul li a:hover {
 }
 
 .quiz-form button:hover {
-    background: #655caa;
+    background: #222831;
 }
 
 #quiz-result {
@@ -704,7 +704,7 @@ a.cta-button {
 }
 
 .cta-button {
-    background: #8377dd;
+    background: #222831;
     color: #fff;
     padding: 0.75em 1.5em;
     border: none;
@@ -720,7 +720,7 @@ a.cta-button {
 }
 
 .cta-button:hover {
-    background: #655caa;
+    background: #222831;
 }
 
 .security-article-image {
@@ -768,7 +768,7 @@ a.cta-button {
 }
 
 .contact-section .cta-button {
-    background: #8377dd;
+    background: #37414f;
     color: #fff;
     padding: .75em 1em;
     border: none;
@@ -785,7 +785,7 @@ a.cta-button {
 }
 
 .contact-section .cta-button:hover {
-    background: #655caa;
+    background: #222831;
 }
 
 .contact-section .cta-button .sub-text {
@@ -992,7 +992,7 @@ footer {
 }
 
 .cta-button {
-    background: #8377dd;
+    background: #37414f;
     color: #fff;
     padding: 0.75em 1.5em;
     border: none;
@@ -1006,7 +1006,7 @@ footer {
 }
 
 .cta-button:hover {
-    background: #655caa;
+    background: #222831;
 }
 
 /* Media Queries */
