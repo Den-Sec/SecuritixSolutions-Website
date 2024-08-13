@@ -1010,89 +1010,1015 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-    .services-container, .team-container, .blog-container, .quiz-content {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 1920px) {
 
-    .service, .team-member, .blog-post, .quiz-text, .quiz-form {
+    .problem-solution {
+        padding: 2em 4em;
+        flex-direction: column;
+    }
+    .problem-solution-content {
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+    .problem-solution .text-content {
         max-width: 100%;
+        margin-left: 0;
     }
-
-    nav ul {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .cta-button {
-        font-size: 1em;
-    }
-
-    .footer-content h2 {
-        font-size: 2em;
-    }
-
-    .footer-content p {
-        font-size: 1em;
-    }
-
-    .footer-button {
-        font-size: 1em;
-    }
-
-    .footer-bottom p {
-        font-size: 0.8em;
-    }
-
-    .process-steps, .statistics-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .process-steps {
-        flex-wrap: nowrap; /* Ensure items stay on one line */
-        gap: 0.5em; /* Adjust gap for smaller screens */
-    }
-
-    .step, .stat-item {
-        max-width: 100%;
+    .problem-solution .video-content iframe {
+        width: 100%;
+        height: auto;
+        visibility: hidden;
     }
 
     .about-us {
-        padding: 4em 2em;
+        padding: 3em 1em;
     }
-
     .about-us .about-content {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 5em;
+        max-width: 80%;
     }
-
-    .about-us .about-content .text-content, 
-    .about-us .about-content .image-content {
+    .about-us .about-content .text-content {
         max-width: 100%;
     }
 
+    
     .about-us .about-content .image-content {
-        margin-bottom: 2em;
+        max-width: 45%;
+    }
+
+    
+    .security-article-section {
+        padding: 2em 6em;
+    }
+    .security-article-content {
+        max-width: 100%;
+    }
+    .security-article-details {
+        flex-direction: row-reverse;
+        gap: 1em;
+    }
+    .security-article-text,
+    .security-article-image {
+        max-width: 100%;
+        text-align: center;
     }
 }
 
-/* Media Queries for smaller screens */
-@media (max-width: 1024px) {
-    .about-us {
-        padding: 4em 2em;
+@media (max-width: 1400px) {
+    .testimonial {
+        max-width: 50%;
+    }
+    .benefit {
+        flex: 1 1 calc(30% - 5em);
+    }
+}
+
+@media (max-width: 1200px) {
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0.25em;
+        max-width: 100%; /* Ensure the nav takes the full width of the container */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        overflow: hidden; /* Hide any overflow content */
+    }
+    header .logo {
+        height: 100px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center the items within the nav */
+        align-items: center; /* Center items vertically */
+        gap: 0.25em;
+        width: 100%;
+        padding: 1em 0; /* Remove any default padding */
+        margin: 0; /* Remove any default margin */
+        list-style: none; /* Remove bullet points */
+    }
+    nav ul li {
+        flex: 1 1 auto; /* Ensure list items are flexible and take available space */
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9em;
+        padding: 0.3em 1em;
+        text-align: center; /* Center the text within each link */
+        display: block; /* Ensure the padding applies to the entire link area */
+        transition: color 0.3s ease;
     }
 
-    .about-us .about-content {
+    .hero {
+        padding: 7em 1em;
+        text-align: center;
+    }
+    .hero-content {
+        flex-direction: row;
+        padding-top: 1em;
+    }
+    .text-content {
+        max-width: 90%;
+    }
+    .text-content h1 {
+        font-size: 2em;
+    }
+    .text-content h2 {
+        font-size: 1em;
+    }
+    .text-content p {
+        font-size: 1em;
+    }
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .problem-solution {
+        padding: 2em 4em;
         flex-direction: column;
     }
+    .problem-solution-content {
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+    .problem-solution .text-content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .problem-solution .video-content iframe {
+        width: 100%;
+        height: auto;
+        visibility: hidden;
+    }
 
-    .about-us .about-content .text-content, 
+    .benefits {
+        padding: 0em 12em;
+        padding-bottom: 5em;
+    }
+    .benefits-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .benefit {
+        max-width: 100%;
+    }
+
+    #statistics {
+        padding: 1em 10em;
+    }
+
+    .statistics-content {
+        display: flex;
+        flex-wrap: nowrap; /* Ensure items stay on one line */
+        justify-content: space-between; /* Add space between items */
+        overflow-x: auto; /* Allow horizontal scrolling if necessary */
+        padding: 1em 2em;
+    }
+
+    .stat-item {
+        flex: 1 1 20%; /* Each item takes up 20% of the available space */
+        max-width: calc(20% - 0em); /* Ensure a max-width with some margin */
+    }
+
+    .testimonials {
+        padding: 3em 8em;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .testimonial {
+        max-width: 100%;
+    }
+
+    #services {
+        padding: 3em 8em;
+    }
+    .services-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        gap: 1em; /* Add space between items */
+        justify-content: space-between; /* Distribute space between items */
+    }
+    
+    .service {
+        max-width: calc(45% - 2em); /* Ensure a max-width with some margin */
+        flex: 1 1 calc(45% - 2em); /* Each item takes up 50% of the available space minus the gap */
+    }
+
+    .quiz-section {
+        padding: 2em 8em;
+    }
+    .quiz-content {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .quiz-text, .quiz-form {
+        max-width: 100%;
+    }
+
+    .about-us {
+        padding: 3em 1em;
+    }
+    .about-us .about-content {
+        flex-direction: row;
+        gap: 5em;
+        max-width: 80%;
+    }
+    .about-us .about-content .text-content {
+        max-width: 100%;
+    }
+
+    
+    .about-us .about-content .image-content {
+        max-width: 45%;
+    }
+
+    #team {
+        padding: 1em;
+    }
+    .team-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .team-member {
+        max-width: 100%;
+    }
+
+    .faq {
+        padding: 1em;
+    }
+    .faq-container {
+        max-width: 100%;
+    }
+
+    .security-article-section {
+        padding: 2em 6em;
+    }
+    .security-article-content {
+        max-width: 100%;
+    }
+    .security-article-details {
+        flex-direction: row-reverse;
+        gap: 1em;
+    }
+    .security-article-text,
+    .security-article-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-section {
+        padding: 1em;
+    }
+    .contact-section .contact-content {
+        max-width: 100%;
+    }
+
+    #process{
+        padding: 2em 5em;
+    }
+    .process-steps{
+        gap: 1em;
+    }
+    .process-steps .step{
+        flex: 1 1 30%;
+        max-width: calc(28% - 2em);
+    }
+
+    footer {
+        padding: 1em;
+    }
+    .footer-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.25em;
+        max-width: 100%; /* Ensure the nav takes the full width of the container */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        overflow: hidden; /* Hide any overflow content */
+    }
+    header .logo {
+        height: 200px;
+        align-self: center;
+        padding: 2em;
+        padding-top: 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center the items within the nav */
+        align-items: center; /* Center items vertically */
+        gap: 0.25em;
+        padding: 0 0; /* Remove any default padding */
+        list-style: none; /* Remove bullet points */
+        width: 100%;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+    nav ul li {
+        flex: 1 1 auto; /* Ensure list items are flexible and take available space */
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9em;
+        padding: 0.3em 0.5em;
+        text-align: center; /* Center the text within each link */
+        display: block; /* Ensure the padding applies to the entire link area */
+        transition: color 0.3s ease;
+        font-size: 1.25em;
+    }
+
+    .hero {
+        padding: 7em 1em;
+        text-align: center;
+    }
+    .hero-content {
+        flex-direction: row;
+        padding-top: 1em;
+    }
+    .text-content {
+        max-width: 90%;
+    }
+    .text-content h1 {
+        font-size: 2em;
+    }
+    .text-content h2 {
+        font-size: 1em;
+    }
+    .text-content p {
+        font-size: 1em;
+    }
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .problem-solution {
+        padding: 2em 1em;
+        flex-direction: column;
+    }
+    .problem-solution-content {
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+    .problem-solution .text-content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .problem-solution .video-content iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .benefits {
+        padding: 1em;
+    }
+    .benefits-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .benefit {
+        max-width: 70%;
+        align-self: center;
+    }
+
+    #statistics {
+        padding: 1em 4em;
+    }
+
+    .statistics-content {
+        display: flex;
+        flex-wrap: nowrap; /* Ensure items stay on one line */
+        justify-content: space-between; /* Add space between items */
+        overflow-x: hidden; /* Allow horizontal scrolling if necessary */
+        gap: 1em;
+    }
+    .stat-item {
+        flex: 1 1 15%; /* Each item takes up 20% of the available space */
+        max-width: calc(15% - 0.5em); /* Ensure a max-width with some margin */
+    }
+
+    .testimonials {
+        padding: 2em 6em;
+    }
+    .testimonials-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .testimonial {
+        max-width: 100%;
+    }
+
+    #services {
+        padding: 2em 4em;
+    }
+    .services-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        gap: 1em; /* Add space between items */
+        justify-content: space-between; /* Distribute space between items */
+    }
+    
+    .service {
+        max-width: calc(41.5% - 1em); /* Ensure a max-width with some margin */
+        flex: 1 1 calc(41.5% - 1em); /* Each item takes up 50% of the available space minus the gap */
+    }
+
+    .quiz-section {
+        padding: 2em 6em;
+    }
+    .quiz-content {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .quiz-text, .quiz-form {
+        max-width: 100%;
+    }
+
+    .about-us {
+        padding: 1em;
+    }
+    .about-us .about-content {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .about-us .about-content .text-content,
+    .about-us .about-content .image-content {
+        max-width: 100%;
+    }
+    .about-us .about-content .image-content img {
+        width: 50%;
+    }
+
+    #team {
+        padding: 1em;
+    }
+    .team-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .team-member {
+        max-width: 100%;
+    }
+
+    .faq {
+        padding: 1em;
+    }
+    .faq-container {
+        max-width: 100%;
+    }
+
+    .security-article-section {
+        padding: 2em 4em;
+    }
+    .security-article-content {
+        max-width: 100%;
+    }
+    .security-article-details {
+        flex-direction: column-reverse;
+        gap: 1em;
+        margin-top: 0.5em;
+    }
+    .security-article-content h3 {
+        margin-bottom: 0.75em;
+    }
+    .security-article-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .security-article-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+
+    .contact-section {
+        padding: 1em;
+    }
+    .contact-section .contact-content {
+        max-width: 100%;
+    }
+
+    #process {
+        padding: 2em 4em;
+    }
+    .process-steps .step {
+        flex: 1 1 30%;
+        max-width: calc(25% - 3em);
+    }
+
+    footer {
+        padding: 1em;
+    }
+    .footer-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .logo {
+        height: 80px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+        width: 100%;
+    }
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    .hero {
+        padding: 0 1em;
+        text-align: center;
+    }
+    .hero-content {
+        flex-direction: column;
+        padding-top: 1em;
+    }
+    .text-content {
+        max-width: 90%;
+    }
+    .text-content h1 {
+        font-size: 2em;
+    }
+    .text-content h2 {
+        font-size: 1em;
+    }
+    .text-content p {
+        font-size: 1em;
+    }
+
+    .problem-solution {
+        padding: 2em 1em;
+        flex-direction: column;
+    }
+    .problem-solution-content {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .problem-solution .text-content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .problem-solution .video-content iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .benefits {
+        padding: 1em;
+    }
+    .benefits-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .benefit {
+        max-width: 100%;
+    }
+
+    .statistics-content {
+        display: flex;
+        flex-wrap: nowrap; /* Ensure items stay on one line */
+        justify-content: space-between; /* Add space between items */
+        overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    }
+    .stat-item {
+        flex: 1 1 20%; /* Each item takes up 20% of the available space */
+        max-width: calc(25% - 1em); /* Ensure a max-width with some margin */
+    }
+    
+    .testimonials {
+        padding: 1em;
+    }
+    .testimonials-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .testimonial {
+        max-width: 100%;
+    }
+
+    #services {
+        padding: 1em;
+    }
+    .services-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .service {
+        max-width: 100%;
+    }
+
+    .quiz-section {
+        padding: 1em;
+    }
+    .quiz-content {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .quiz-text, .quiz-form {
+        max-width: 100%;
+    }
+
+    .about-us {
+        padding: 1em;
+    }
+    .about-us .about-content {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .about-us .about-content .text-content,
     .about-us .about-content .image-content {
         max-width: 100%;
     }
 
-    .about-us .about-content .image-content {
-        margin-bottom: 2em;
+    #team {
+        padding: 1em;
     }
+    .team-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .team-member {
+        max-width: 100%;
+    }
+
+    .faq {
+        padding: 1em;
+    }
+    .faq-container {
+        max-width: 100%;
+    }
+
+    .security-article-section {
+        padding: 1em;
+    }
+    .security-article-content {
+        max-width: 100%;
+    }
+    .security-article-details {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .security-article-text,
+    .security-article-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-section {
+        padding: 1em;
+    }
+    .contact-section .contact-content {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 1em;
+    }
+    .footer-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.25em;
+        max-width: 100%; /* Ensure the nav takes the full width of the container */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        overflow: hidden; /* Hide any overflow content */
+    }
+    header .logo {
+        height: 150px;
+        align-self: center;
+        padding: 2em;
+        padding-top: 0;
+        padding-bottom: 1em;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center the items within the nav */
+        align-items: center; /* Center items vertically */
+        gap: 0.25em;
+        padding: 0 0; /* Remove any default padding */
+        list-style: none; /* Remove bullet points */
+        width: 100%;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+    nav ul li {
+        flex: 1 1 auto; /* Ensure list items are flexible and take available space */
+        font-size: 0.6em;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.3em 0.5em;
+        text-align: center; /* Center the text within each link */
+        display: block; /* Ensure the padding applies to the entire link area */
+        transition: color 0.3s ease;
+        font-size: 1.25em;
+    }
+    .hero {
+        padding: 7em 1em;
+        text-align: center;
+    }
+    .hero-content {
+        flex-direction: column;
+        padding-top: 30em;
+    }
+    .text-content {
+        max-width: 90%;
+    }
+    .text-content h1 {
+        font-size: 2em;
+    }
+    .text-content h2 {
+        font-size: 1em;
+    }
+    .text-content p {
+        font-size: 1em;
+    }
+    .image-content img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .problem-solution {
+        padding: 1em 1em;
+        flex-direction: column;
+    }
+    .problem-solution-content {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .problem-solution .text-content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .problem-solution .text-content h2 {
+        font-size: 1.5em;
+    }
+    .problem-solution .text-content strong {
+        font-size: 0.6em;
+    }
+    .problem-solution .text-content p {
+        font-size: .7em;
+    }
+    .problem-solution .video-content iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .benefits {
+        padding: 2em;
+    }
+    .benefits-container {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .benefit {
+        max-width: 50%;
+    }
+    .benefits h2 {
+        font-size: 1.5em;
+    }
+    .benefits h3 {
+        font-size: 1em;
+    }
+    .benefits p {
+        font-size: 0.7em;
+    }
+    .benefits img {
+        max-width: 35%;
+    }
+
+    #statistics {
+        padding: 1em 1.5em;
+    }
+    #statistics h2 {
+        font-size: 1.5em;
+    }
+    #statistics p {
+        font-size: .7em;
+    }
+    .stat-item h3 {
+        font-size: 1.2em;
+    }
+    .stat-item img {
+        max-width: 60%;
+        height: auto;
+    }
+    .stat-item {
+        flex: 1 1 auto;
+        max-width: 47%;
+        height: 16em;
+        box-sizing: border-box;
+    }
+    .statistics-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow-x: hidden;
+        gap: 0.5em;
+        align-items: flex-start; /* Aligns items at the start of the container */
+        padding: 1em;
+    }
+
+    .testimonials {
+        padding: 1em 2em;
+    }
+    .testimonials-container {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .testimonial {
+        max-width: 80%;
+    }
+    .testimonials h2 {
+        font-size: 1.5em;
+    }
+    .testimonials h3 {
+        font-size: .75em;
+    }
+    .testimonials p {
+        font-size: .7em;
+    }
+    .testimonial-author img {
+        width: 40px;
+        height: auto;
+    }
+    #services {
+        padding: 1em 2em;
+    }
+    .services-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .service {
+        max-width: 50%;
+        align-self: center;
+    }
+    #services h2 {
+        font-size: 1.5em;
+    }
+    #services h3 {
+        font-size: 1em;
+    }
+    #services p {
+        font-size: 0.75em;
+    }
+    .service img {
+        max-width: 4em;
+    }
+
+    .quiz-section {
+        padding: 1em 2em;
+    }
+    .quiz-section h2 {
+        font-size: 1.7em;
+    }
+    .quiz-content {
+        flex-direction: column;
+        gap: 3em;
+    }
+    .quiz-text, .quiz-form {
+        max-width: 80%;
+        font-size: .7em;
+        align-self: center;
+    }
+    .quiz-text p, .quiz-text ul {
+        text-align: center;
+    }
+
+    .about-us {
+        padding: 1em;
+    }
+    .about-us .about-content {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .about-us .about-content .text-content h2 {
+        font-size: 2em;
+    }
+    .about-us .about-content .text-content p {
+        font-size: .7em;
+    }
+    .about-us .about-content .text-content,
+    .about-us .about-content .image-content {
+        max-width: 100%;
+    }
+    .about-us .about-content .image-content p{
+        font-size: .5em;
+    }
+    .about-us .about-content .image-content img {
+        margin-top: 1em;
+        width: 90%;
+    }
+
+    .security-article-section {
+        padding: 1em;
+    }
+    .security-article-content {
+        max-width: 100%;
+    }
+    .security-article-content h3 {
+        font-size: 1.5em;
+    }
+    .security-article-text p {
+        font-size: 0.7em;
+    }
+    .security-article-text ul li {
+        font-size: 0.7em;
+    }
+    a.cta-button {
+        font-size: 0.9em;
+    }
+    .security-article-details {
+        flex-direction: column-reverse;
+        gap: 0.5em;
+    }
+    .security-article-text,
+    .security-article-image {
+        max-width: 90%;
+        text-align: center;
+        margin: 0;
+    }
+
+
+    .contact-section {
+        padding: 1em;
+    }
+    .contact-section .contact-content {
+        max-width: 100%;
+    }
+    .contact-section h2 {
+        font-size: 2em;
+    }
+    .contact-section p {
+        font-size: .9em;
+    }
+    .contact-section .cta-button {
+        font-size: 1em;
+    }
+
+    .process-steps {
+        display: block;
+    }
+    .process-steps .step {
+        max-width: 62%;
+        margin-bottom: 1em;
+    }
+    #process h2 {
+        font-size: 2em;
+    }
+
+    .step h3 {
+        font-size: 1em;
+    }
+    .step p {
+        font-size: 0.7em;
+    }
+    .step img {
+        max-width: 40%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    footer {
+        padding: 1em;
+    }
+    .footer-content {
+        max-width: 100%;
+    }
+    .footer-content h2 {
+        font-size: 2.5em;
+    }
+    .footer-content p {
+        font-size: 0.95em;
+    }
+    .footer-links {
+        font-size: .7em;
+    }
+
 }
